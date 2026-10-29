@@ -1,0 +1,30 @@
+{
+  "name": "mira_active",
+  "version": "0.3.0",
+  "description": "DSH 自我激活插件（闹钟）：一条配置=一个闹钟（alarmId 为键，条目带 sessionId），支持单次/每日/间隔/随机、条目级静默时段、失败退避与自动停用；到点用 steer（插话）向会话注入一条用户消息，会话忙也插到最近一步，绝不排队",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "plugin",
+    "scheduler",
+    "wakeup"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Stella-Mira/mira_active.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

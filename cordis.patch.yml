@@ -1,0 +1,8 @@
+# mira_active -- DSH 自我激活插件（闹钟）bundle patch
+#
+# 最小装配：条目 id/name 必须与包名一致。
+# 真正的配置与状态在 $DSH_HOME/mira_config/mira_active/{config,alarms}.json，
+# 用 mira_active_* 工具或设置写入后以文件为准。
+- insert:
+    - id: mira_active
+      name: mira_active
